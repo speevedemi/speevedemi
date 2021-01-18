@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title> <!-- Название страницы -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><script>document.write(document.domain)</script></a>
+            <p class="quote"></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Mercado Central de Frutas y Hortalizas</h1>
+
+
+            <img src="imaage.jpg" alt="Nature">
+
+            <p class="main__p">Trasladado a Mercabarna el 9 de agosto de 1971, fue el primer mercado que se estableció en la Unidad Alimentaria, proveniente del emblemático recinto del Born de Barcelona.Es el mercado que ocupa una mayor extensión (más de 170.000 m2 distribuidos en 7 naves) y el que genera mayor movimiento comercial y humano. Operan unas 180 empresas, en 440 puntos de venta. Comercializa más de 1 millón de toneladas de productos al año, que llegan y se distribuyen por todo el mundo.
+
+Desde 1989, el Mercado Central de Frutas y Hortalizas funciona en horario diurno, a diferencia de la mayoría de mercados mayoristas del mundo, que siguen siendo de madrugada.
+
+Si está interesado en pedir frutas y verduras frescas, complete el formulario a continuación.</p>
+
+            <a href="OrderForm.html" class="main__btn">
+Orden</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="Privacy_Policy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        var h1 = document.getElementsByTagName("h1")[0].innerHTML;
+        var image = document.getElementsByTagName("img")[0].src;
+        sessionStorage.setItem("h1", h1);
+        sessionStorage.setItem("image", image);
+    </script>
+
+</body>
+</html>
